@@ -8,7 +8,7 @@ generate :nifty_layout
 
 git :init
 
-run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
+run "touch tmp/.gitignore log/.gitignore vendor/.gitignore db/.gitignore"
 run "cp config/database.yml config/database.yml.sample"
 
 file ".gitignore", <<-END
