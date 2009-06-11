@@ -8,9 +8,8 @@ generate :nifty_layout
 
 git :init
 
-run "echo 'TODO add readme content' > README"
 run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
-run "cp config/database.yml config/example_database.yml"
+run "cp config/database.yml config/database.yml.sample"
 
 file ".gitignore", <<-END
 log/*.log
