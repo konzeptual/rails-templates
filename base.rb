@@ -1,6 +1,6 @@
 if yes?("Do you want to use RSpec for testing?")
-  gem "rspec"
-  gem "rspec-rails"
+  gem "rspec", :lib => "spec"
+  gem "rspec-rails", :lib => "spec/rails"
   generate :rspec
 end
 
