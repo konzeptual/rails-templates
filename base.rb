@@ -1,8 +1,10 @@
-if yes?("Do you want to use RSpec for testing?")
-  gem "rspec", :lib => "spec"
-  gem "rspec-rails", :lib => "spec/rails"
+#if yes?("Do you want to use RSpec for testing?")
+  gem "rspec", :lib => false, :version => ">= 1.2.0"
+  gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
   generate :rspec
-end
+#end
+
+gem "haml"
 
 generate :nifty_layout
 
