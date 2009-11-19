@@ -1,7 +1,7 @@
-load_template "http://github.com/caleb/rails-templates/raw/master/base.rb"
+load_template "http://github.com/krick/rails-templates/raw/master/base.rb"
 
 name = ask("What do you want a user to be called?")
-generate :nifty_authentication, name, '--authlogic', '--rspec', '--haml'
+generate :nifty_authentication, name, '--authlogic', '--rspec'
 rake "db:migrate"
 
 git :add => "."
