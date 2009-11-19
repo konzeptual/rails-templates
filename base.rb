@@ -28,5 +28,8 @@ config/database.yml
 db/*.sqlite3
 END
 
+git :rm => "public/index.html"
+git :rm => "README"
+
 git :add => "."
 git :commit => "-m 'initial commit'"
