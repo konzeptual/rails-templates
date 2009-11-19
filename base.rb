@@ -20,7 +20,6 @@ git :init
 
 run 'touch spec/factories.rb'
 run "touch tmp/.gitignore log/.gitignore vendor/.gitignore db/.gitignore"
-run "cp config/database.yml config/database.yml.sample"
 
 file ".gitignore", <<-END
 log/*.log
