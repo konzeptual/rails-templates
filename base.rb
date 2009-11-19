@@ -1,10 +1,13 @@
 #if yes?("Do you want to use RSpec for testing?")
-  gem "rspec", :lib => false, :version => ">= 1.2.0"
-  gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
-  generate :rspec
-#end
+gem "rspec",       :lib => false, :version => ">= 1.2.9",  :environment => :test
+gem "rspec-rails", :lib => false, :version => ">= 1.2.9",  :environment => :test
+gem "cucumber",    :lib => false, :version => ">=0.3.11",  :environment => :test
+gem "webrat",      :lib => false, :version => ">=0.4.4",   :environment => :test
 
-gem "haml"
+generate :rspec
+generate :cucumber
+
+#end
 
 generate :nifty_layout
 
