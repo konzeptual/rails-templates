@@ -6,4 +6,4 @@ run "sed -i '/^class/a \\\ \\\ include LaunchingSoon if Rails.env.production?' a
 
 route "map.root :controller => :application"  
 
-rake "db:migrate:launching_soon"
+rake "db:migrate:launching_soon",  :env => 'production'
